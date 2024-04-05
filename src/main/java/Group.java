@@ -1,9 +1,13 @@
 
 public class Group {
 	static String getAnthonysName() {
-	String message= "Anthony Smith";
+	String message = "Anthony Smith";
 	return message;
    	}
+
+	public String eliAmeshie() {
+		return "Eli Ameshie";
+	}
 
 	public String kaylaKeplinger() {
 		return "Kayla Keplinger";
@@ -14,11 +18,12 @@ public class Group {
 		String names[] = new String[5];
 		
 		names[0] = kaylaKeplinger();
+		names[1] = eliAmeshie();
 		
 		return names;
 	}
 	
-	double Multiply (int num1,int num2)
+	double Multiply (int num1, int num2)
   	{
   		int result=0;
   			for(int i =0; i < num1;i++) {
@@ -26,6 +31,19 @@ public class Group {
   			}
   		return result;
   	}
+
+	static int power(int num1, int num2) {
+
+		int result = 1;
+
+		for (int exponent = num2; num2 != 0; num2--) {
+			result = result * num1;
+		}
+
+		return result;
+	}
+
+
 	public static void main(String[] args) {
 		System.out.println(getAnthonysName);
 
@@ -36,6 +54,11 @@ public class Group {
 		for (String name : names) {
 			System.out.println(name);
 		}
+
+		// Power Function - Eli
+		System.out.println("Power " + power(2, 4));
+
+
 	}
 }
 
