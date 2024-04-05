@@ -9,6 +9,18 @@ public class Group {
 		return "Kayla Keplinger";
 	}
 
+	// method obtained from craigpardey.com
+	public int divide(int num1, int num2) {
+    	if (num2 == 0){
+     		throw new IllegalArgumentException("Denonimnator cannot be zero");
+    	}
+    	int i = 1;
+    	while(num2 * i <= num1){
+      		i++;
+    	}
+    		return i - 1;
+  	}
+
 	// please add your own names :)
 	public String[] getGroupMembers() {
 		String names[] = new String[5];
