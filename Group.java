@@ -54,7 +54,7 @@ public class Group {
   		return result;
   	}
 	public static void main(String[] args) {
-		System.out.println(getAnthonysName);
+		
 
 		// Kayla's addition
 		Group g = new Group();
