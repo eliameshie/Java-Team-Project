@@ -18,7 +18,7 @@ public class Group {
 		String names[] = new String[5];
 		
 		names[0] = kaylaKeplinger();
-		names[1] = eliAmeshie();
+		names[2] = eliAmeshie();
 		
 		return names;
 	}
