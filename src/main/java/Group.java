@@ -1,6 +1,11 @@
 
 public class Group {
 	static String getAnthonysName() {
+
+	return "Anthony Smith";
+   	}
+
+
 	String message = "Anthony Smith";
 	return message;
    	}
@@ -13,12 +18,47 @@ public class Group {
 		return "Kayla Keplinger";
 	}
 
+	// method obtained from craigpardey.com
+	public int divide(int num1, int num2) {
+    	if (num2 == 0){
+     		throw new IllegalArgumentException("Denonimnator cannot be zero");
+    	}
+    	int i = 1;
+    	while(num2 * i <= num1){
+      		i++;
+    	}
+    		return i - 1;
+  	}
+
+
 	// please add your own names :)
 	public String[] getGroupMembers() {
 		String names[] = new String[5];
 		
 		names[0] = kaylaKeplinger();
-		names[2] = eliAmeshie();
+		names[1]=getAnthonysName();
+    ames[2] = eliAmeshie();
+		return names;
+	}
+	
+	int power(int num1, int num2){
+		if(num2==0){
+			return 1;
+		}
+		int result = num1;
+		 for(int i=1; i < num2;i++){
+			 int tmp=0;
+			 for(j=0;i < num1;i++){
+				tmp+=result;
+			 }
+			 result=tmp;
+		 }
+			 
+		
+		return result;
+	}
+	double Multiply (int num1,int num2)
+		n
 		
 		return names;
 	}
@@ -31,6 +71,10 @@ public class Group {
   			}
   		return result;
   	}
+
+	public static void main(String[] args) {
+		
+
 
 	static int power(int num1, int num2) {
 
@@ -47,6 +91,7 @@ public class Group {
 	public static void main(String[] args) {
 		System.out.println(getAnthonysName);
 
+
 		// Kayla's addition
 		Group g = new Group();
 		String names[] = g.getGroupMembers();
@@ -55,8 +100,10 @@ public class Group {
 			System.out.println(name);
 		}
 
+
 		// Power Function - Eli
 		System.out.println("Power " + power(2, 4));
+
 
 
 	}
