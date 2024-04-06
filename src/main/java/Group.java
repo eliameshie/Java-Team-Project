@@ -12,6 +12,10 @@ public class Group {
 		return "Kayla Keplinger";
 	}
 
+	public String AssaadAlAssaad() {
+		return "Assaad AlAssaad";
+	}
+
 	// please add your own names :)
 	public String[] getGroupMembers() {
 
@@ -20,6 +24,7 @@ public class Group {
 		names[0] = kaylaKeplinger();
 		names[1] = getAnthonysName();
 		names[2] = eliAmeshie();
+		names[3] = AssaadAlAssaad();
 
 		return names;
 	}
