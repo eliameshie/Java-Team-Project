@@ -52,7 +52,7 @@ public class Group {
 		int result = num1;
 		 for(int i=0; i < num2;i++){
 		int tmp=0;
-			 for(j=0;i < num1;i++){
+			 for(int j=0;i < num1;i++){
 				tmp+=result;
 			 }
 			 result=tmp;
