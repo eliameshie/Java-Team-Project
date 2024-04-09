@@ -60,7 +60,7 @@ public class Group {
 		 return result;
 	}
 
-	double Multiply (int num1, int num2) {
+	static double Multiply (int num1, int num2) {
   		int result=0;
   			for (int i =0; i < num1; i++) {
   				result = result + num2;
