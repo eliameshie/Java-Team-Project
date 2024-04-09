@@ -16,7 +16,7 @@ public class TestCases{
 		assertEquals(20,output_mul,0.01);
 		}
   @Test
-	public void intDivision() {
+	public void Division() {
 		CodeToTest tst3 = new CodeToTest();
 		double output_div=tst2.Divide(10, 2);
 		assertEquals(5,output_div,0.01);
