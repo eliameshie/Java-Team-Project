@@ -1,6 +1,6 @@
 
 public class Group {
-	static String getAnthonysName() {
+	public String getAnthonysName() {
 		return "Anthony Smith";
    	}
 
