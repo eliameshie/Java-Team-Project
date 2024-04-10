@@ -1,12 +1,12 @@
 stages {
         stage('Build') {
             steps {
-                sh 'javac group.java'
+                sh 'javac Group.java'
             }
         }
         stage('Test') {
             steps {
-                sh 'java group'
+                sh 'java Group'
             }
             post {
                always {
