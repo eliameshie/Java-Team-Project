@@ -8,7 +8,11 @@ stages {
             steps {
                 sh 'java Group'
             }
-            
+            post {
+               always {
+                    junit 'target/surefire-reports/*.xml'
+                }
+            }
         }
     }
 
