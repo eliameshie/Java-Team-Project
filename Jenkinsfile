@@ -5,12 +5,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'javac Group.java'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'java Group'
             }
             post {
                 always {
