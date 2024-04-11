@@ -21,3 +21,4 @@ public class TestCases{
 		double output_div=tst2.Divide(10, 2);
 		assertEquals(5,output_div,0.01);
 		}
+}
