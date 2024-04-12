@@ -96,7 +96,7 @@ public class Group {
 
 		// Power Function - Eli
 		System.out.println("Power: " + power(4, 2));
-		System.out.println("Divide: " + Divide(4, 2));
+		System.out.println("Divide: " + divide(4, 2));
 		System.out.println("Divide: " + Multiply(4, 2));
 
 
