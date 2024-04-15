@@ -1,6 +1,6 @@
 
 public class Group {
-	static String getAnthonysName() {
+	public String getAnthonysName() {
 		return "Anthony Smith";
    	}
 
@@ -30,7 +30,7 @@ public class Group {
 	}
 
 	// method obtained from craigpardey.com
-	public int divide(int num1, int num2) {
+	static int divide(int num1, int num2) {
 
     	if (num2 == 0) {
      		throw new IllegalArgumentException("Denonimnator cannot be zero");
@@ -45,22 +45,22 @@ public class Group {
 		return i - 1;
   	}
 
-//	double Multiply (int num1,int num2) {
-//		if(num2==0){
-//			return 1;
-//		}
-//		int result = num1;
-//		 for(int i=1; i < num2;i++){
-//		int tmp=0;
-//			 for(j=0;i < num1;i++){
-//				tmp+=result;
-//			 }
-//			 result=tmp;
-//		 }
-//		 return result;
-//	}
-//
-	double Multiply (int num1, int num2) {
+	static double power (int num1,int num2) {
+		if(num2==0){
+			return 1;
+		}
+		int result = num1;
+		 for(int i=0; i < num2;i++){
+		int tmp=0;
+			 for(int j=0;i < num1;i++){
+				tmp+=result;
+			 }
+			 result=tmp;
+		 }
+		 return result;
+	}
+
+	static double Multiply (int num1, int num2) {
   		int result=0;
   			for (int i =0; i < num1; i++) {
   				result = result + num2;
@@ -69,20 +69,20 @@ public class Group {
   	}
 
 
-	static int power(int num1, int num2) {
+	//static int power(int num1, int num2) {
 
-		int result = 1;
+	//	int result = 1;
 
-		for (int exponent = num2; num2 != 0; num2--) {
-			result = result * num1;
-		}
+	//	for (int exponent = num2; num2 != 0; num2--) {
+	//		result = result * num1;
+	//	}
 
-		return result;
-	}
+	//	return result;
+	//}
 
 
 	public static void main(String[] args) {
-//		System.out.println(getAnthonysName);
+
 
 
 		// Kayla's addition
@@ -95,7 +95,9 @@ public class Group {
 
 
 		// Power Function - Eli
-		System.out.println("Power " + power(2, 4));
+		System.out.println("Power: " + power(4, 2));
+		System.out.println("Divide: " + divide(4, 2));
+		System.out.println("Divide: " + Multiply(4, 2));
 
 
 	}
